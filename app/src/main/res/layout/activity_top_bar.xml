@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/holo_red_dark">
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/common_title"
+        android:text="洗浴中心"/>
+
+    <Button
+        android:id="@+id/btn_back"
+        style="@style/button_back_style"
+        android:text="返回"/>
+
+    <Button
+        android:id="@+id/btn_left"
+        style="@style/button_left_style"
+        android:text="你真的好"/>
+
+    <Button
+        android:id="@+id/btn_right"
+        style="@style/button_right_style"
+        android:text="不想要我"/>
+
+</RelativeLayout>
+

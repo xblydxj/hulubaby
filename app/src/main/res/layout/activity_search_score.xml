@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/center_id_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        app:title="搜索结果"
+        app:titleTextColor="@color/md_white_color_code"
+        android:background="@color/md_teal_300_color_code">
+    </android.support.v7.widget.Toolbar>
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="45dp"-->
+        <!--android:background="@android:color/holo_red_dark"-->
+        <!--android:padding="6dp">-->
+
+        <!--<Button-->
+            <!--android:id="@+id/bt_return"-->
+            <!--android:layout_width="60dp"-->
+            <!--android:layout_height="35dp"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:background="@drawable/head_back_selected"-->
+            <!--android:text="返回"-->
+            <!--android:textColor="#fff"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:text="搜索结果"-->
+            <!--android:textColor="#fff"-->
+            <!--android:textSize="20sp"/>-->
+
+    <!--</RelativeLayout>-->
+
+    <LinearLayout
+        android:id="@+id/ll_search_message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/bt_sell_count"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="销量"
+                android:background="@drawable/rectangle_corner"/>
+
+            <Button
+                android:id="@+id/bt_price_order"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="价格"
+                android:background="@drawable/rectangle_corner"/>
+
+            <Button
+                android:id="@+id/bt_callback"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="好评度"
+                android:background="@drawable/rectangle_corner"/>
+
+            <Button
+                android:id="@+id/firstSell_time"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="上架时间"
+                android:background="@drawable/rectangle_corner"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#3000"/>
+
+
+        <ListView
+            android:id="@+id/lv_goods_show"
+            android:dividerHeight="5dp"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+        </ListView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_no_search_goal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/iv_nosearch_goal"
+            android:layout_width="80dp"
+            android:layout_height="130dp"
+            android:background="@drawable/empty_prod_img"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="60dp"
+            android:visibility="visible"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="抱歉,无此类商品!"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:layout_below="@+id/iv_nosearch_goal"
+            android:textSize="20sp"
+            android:textColor="#000"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

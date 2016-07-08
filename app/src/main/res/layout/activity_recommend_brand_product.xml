@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/center_id_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        app:title="推荐品牌"
+        app:titleTextColor="@color/md_white_color_code"
+        android:background="@color/md_teal_300_color_code">
+    </android.support.v7.widget.Toolbar>
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="45dp"-->
+        <!--android:background="@android:color/holo_red_dark"-->
+        <!--android:padding="6dp">-->
+
+        <!--<Button-->
+            <!--android:id="@+id/btn_back"-->
+            <!--android:layout_width="60dp"-->
+            <!--android:layout_height="35dp"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:background="@drawable/head_back_selected"-->
+            <!--android:text="返回"-->
+            <!--android:textColor="#fff"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:text="推荐品牌"-->
+            <!--android:textColor="#fff"-->
+            <!--android:textSize="20sp"/>-->
+
+    <!--</RelativeLayout>-->
+
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="2dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_food"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="营养食品"
+            android:gravity="center"
+            android:textColor="@color/md_white_color_code"
+            android:background="@color/md_purple_400_color_code"
+
+            android:textSize="15sp"/>
+        <GridView
+            android:id="@+id/gd_food"
+            android:layout_margin="5dp"
+            android:layout_below="@+id/tv_food"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:columnWidth="150dp"
+            android:horizontalSpacing="8dp"
+            android:numColumns="2"
+            android:stretchMode="columnWidth"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_yunma"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="孕妈专区"
+            android:gravity="center"
+            android:textColor="@color/md_white_color_code"
+            android:background="@color/md_purple_400_color_code"
+            android:textSize="15sp"/>
+        <GridView
+            android:id="@+id/gd_mother"
+            android:layout_margin="5dp"
+            android:layout_below="@+id/tv_yunma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:columnWidth="150dp"
+            android:horizontalSpacing="8dp"
+            android:numColumns="2"
+            android:stretchMode="columnWidth"/>
+
+    </RelativeLayout>
+</LinearLayout>

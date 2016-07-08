@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ConvenientBanner">
+        <attr name="canLoop" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="Listitemview">
+        <attr name="text" format="string"/>
+        <attr name="bgtype">
+            <enum name="first" value="1"/>
+            <enum name="middle" value="2"/>
+            <enum name="last" value="3"/>
+            <enum name="fourth" value="4"/>
+            <enum name="fifth" value="5"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="TopBarView">
+        <attr name="title_text" format="string"/>
+        <attr name="btn_left">
+            <enum name="none" value="0"/>
+            <enum name="rectangle" value="1"/>
+            <enum name="back" value="2"/>
+        </attr>
+        <attr name="btn_right">
+            <enum name="none" value="0"/>
+            <enum name="rectangle" value="1"/>
+        </attr>
+        <attr name="left_text" format="string"/>
+        <attr name="right_text" format="string"/>
+    </declare-styleable>
+
+</resources>

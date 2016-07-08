@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:focusable="true"
+              android:focusableInTouchMode="true"
+              android:orientation="vertical">
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<ImageButton-->
+    <!--android:id="@+id/bt_Homesearch"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="@drawable/home_search2"-->
+    <!--android:gravity="center_vertical"/>-->
+
+    <!--<EditText-->
+    <!--android:id="@+id/et_home_search"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:background="#0fff"-->
+    <!--android:hint="请输入关键字"-->
+    <!--android:paddingLeft="30dp"-->
+    <!--android:layout_marginRight="60dp"-->
+    <!--android:layout_marginLeft="20dp"-->
+    <!--android:textSize="20sp"/>-->
+    <!--</RelativeLayout>-->
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/home_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardElevation="5dp"
+        app:cardMaxElevation="10dp">
+
+        <EditText
+            android:id="@+id/et_home_search"
+            android:layout_width="wrap_content"
+            android:maxLines="1"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/search_red"
+            android:gravity="center_vertical"
+            android:hint="请输入关键字"
+            android:paddingLeft="30dp"
+            android:singleLine="true"
+            android:textSize="16sp"/>
+
+        <ImageButton
+            android:id="@+id/bt_Homesearch"
+            android:layout_width="50dp"
+            android:layout_height="31dp"
+            android:layout_gravity="right|center_vertical"
+            android:background="#00ffffff"
+            android:elevation="8dp"
+            />
+    </android.support.v7.widget.CardView>
+
+    <com.bigkoo.convenientbanner.ConvenientBanner
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/convenientBanner"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        android:elevation="5dp"
+        app:canLoop="true"/>
+
+    <ListView
+        android:id="@+id/lv_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="6dp"
+        android:dividerHeight="7dp"
+        android:elevation="5dp">
+    </ListView>
+
+</LinearLayout>

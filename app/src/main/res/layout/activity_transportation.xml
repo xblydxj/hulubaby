@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="@color/md_teal_300_color_code"
+        app:title="配送方式"
+        app:titleTextColor="@color/md_white_color_code"
+        android:layout_height="90dp">
+
+    </android.support.v7.widget.Toolbar>
+    <!--<com.heima.jyl.redboy.ui.view.TopBarView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--itheima:btn_left="back"-->
+        <!--itheima:title_text="配送方式"/>-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="一、半日配送"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:text="(1) 当日11:00-18:00生成的订单（部分区域11:00-23:00），次日14点前完成配送；\n(2)当日18:00-次日11:00（部分区域23:00-11:00）生成的订单，次日22点前完成配送。"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="二、一日三送"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:text=" 一天内三次送货，客户可以根据自己的收货时间在日历中选择送货时间段，分别为上午、下午、晚上。\n服务说明：\n①、服务范围：“一日三送”只针对小件商品，服务城市为六个城市，（北京、广州、上海、深圳、成都、南京），苏宁物流辐射范围区域，郊区与偏远地区不享受该服务；\n②、由于业务发展、行政区域更名等“一日三送”服务区域，可能会有扩大、变更、调整，具体请以苏宁最新发布信息为准。
+注意事项：
+若遇到特殊天气（如雨雪天气、地震等）、交通管制、停电、等其它因素，“一日三送”将不能保证时效"
+        android:textSize="15sp"/>
+</LinearLayout>

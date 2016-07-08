@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 按压状态显示的图片 -->
+    <item android:drawable="@drawable/head_button_selected"
+          android:state_pressed="true"/>
+    <!-- 默认状态显示的图片 -->
+    <!-- 系统找到默认状态下的图片之后就不会再不会再往下寻找-->
+    <item android:drawable="@drawable/head_button_normal"/>
+</selector>
+

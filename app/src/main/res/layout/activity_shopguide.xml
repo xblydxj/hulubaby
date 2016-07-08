@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+<android.support.v7.widget.Toolbar
+    android:layout_width="match_parent"
+    app:title="购物指南"
+    app:titleTextColor="@color/white"
+    android:background="@color/md_teal_300_color_code"
+    android:layout_height="90dp">
+
+</android.support.v7.widget.Toolbar>
+    <!--<com.heima.jyl.redboy.ui.view.TopBarView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--itheima:btn_left="back"-->
+        <!--itheima:title_text="购物指南"/>-->
+    <ScrollView android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+<LinearLayout android:layout_width="wrap_content"
+              android:orientation="vertical"
+              android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="一、搜索商品"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:text="商品搜索框位于搜索页上部，在搜索框中可输入商品名称、型号（或包含的字符），完成后点击搜索按钮即可。"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="二、选择加入购物车"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:text="（1）找到想要购买的商品，点击“加入购物车”，将该商品加入购物车。 "
+        android:textSize="15sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:text="（2）这时可选择继续购物或者去购物车结算，点击继续购物回到当前界面。"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="三、填写订单信息"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:text="如果确认购买该商品，可点击去结算，页面会跳转至订单信息确认页面，在该页面中可选择填写收货信息、发票信息，选择支付方式，查看商品信息、服务信息及结算信息。"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="四、支付"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:text="红孩子商城现支持易付宝支付、网银支付、银联在线支付、分期付款、货到付款等多种支付方式 "
+        android:textSize="15sp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

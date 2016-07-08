@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.heima.jyl.redboy">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ui.activity.MyWelcomeActivity"
+            android:theme="@style/WelcomeScreenTheme">
+        </activity>
+        <activity android:name=".ui.activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activity.MainActivity"
+            android:launchMode="singleTask">
+        </activity>
+        <activity android:name=".ui.activity.HelpCenterActivity"/>
+        <activity android:name=".ui.activity.ShopGuideActivity"/>
+        <activity android:name=".ui.activity.ServiceActivity"/>
+        <activity android:name=".ui.activity.TransportationActivity"/>
+        <activity android:name=".ui.activity.AccountActivity"/>
+        <activity android:name=".ui.activity.RegisterActivity"/>
+        <activity android:name=".ui.activity.CollectorActivity"/>
+        <activity android:name=".ui.activity.LimitBuyActivity"/>
+        <activity android:name=".ui.activity.SearchScoreActivity"/>
+        <activity android:name=".ui.activity.GuideActivity"/>
+        <activity android:name=".ui.activity.LoginActivity"/>
+        <activity android:name=".ui.activity.TopicActivity"/>
+        <activity android:name=".ui.activity.NewProductActivity"/>
+        <activity android:name=".ui.activity.AboutActivity"/>
+        <activity android:name=".ui.activity.FeedActivity"/>
+        <activity android:name=".ui.activity.OrderActivity"/>
+        <activity android:name=".ui.activity.ProductDetailActivity"/>
+        <activity android:name=".ui.activity.AddressManageActivity"/>
+        <activity android:name=".ui.activity.AddAddressActivity"/>
+        <activity android:name=".ui.activity.LookRecordActivity"/>
+        <activity android:name=".ui.activity.HotProductActivity"/>
+        <activity android:name=".ui.activity.RecommendBrandActivity">
+        </activity>
+        <activity android:name=".ui.activity.CenterActivity"/>
+        <activity android:name=".ui.activity.BillNoteActivity"/>
+        <activity android:name=".ui.activity.UnPayActivity"/>
+        <activity android:name=".ui.activity.PayedActivity"/>
+        <activity android:name=".ui.activity.CancelledActivity"/>
+        <!--
+     ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+
+        <activity android:name=".ui.activity.PayActivity">
+        </activity>
+        <activity android:name=".ui.activity.BigPicActivity">
+        </activity>
+    </application>
+
+</manifest>

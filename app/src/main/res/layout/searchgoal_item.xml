@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp">
+
+    <ImageView
+        android:id="@+id/iv_search_goos_icon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/bar_more_normal"
+        android:background="@drawable/product_list_bg"
+        />
+    <TextView
+        android:id="@+id/tv_goods_search_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="商品名"
+        android:textSize="22sp"
+        android:layout_toRightOf="@+id/iv_search_goos_icon"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/tv_goods_search_marketprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="市场价格"
+        android:textSize="20sp"
+        android:layout_toRightOf="@+id/iv_search_goos_icon"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/tv_goods_search_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="价格"
+        android:textSize="20sp"
+        android:background="@drawable/separation"
+        android:layout_toRightOf="@+id/iv_search_goos_icon"
+        android:gravity="center"
+
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="100dp"/>
+
+    <ImageView
+        android:id="@+id/iv_next_good_message"
+        android:layout_width="13dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/arrow"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:itheima="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="@color/md_teal_300_color_code"
+        app:title="帮助中心"
+        app:titleTextColor="@color/md_white_color_code"
+        android:layout_height="90dp">
+
+    </android.support.v7.widget.Toolbar>
+    <!--<com.heima.jyl.redboy.ui.view.TopBarView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--itheima:btn_left="back"-->
+        <!--itheima:title_text="帮助中心"/>-->
+
+    <com.heima.jyl.redboy.ui.view.Listitemview
+        android:id="@+id/ltv_guide"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        itheima:text="购物指南:"/>
+
+    <com.heima.jyl.redboy.ui.view.Listitemview
+        android:id="@+id/ltv_service"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content"
+        itheima:bgtype="middle"
+        itheima:text="售后服务:"/>
+
+    <com.heima.jyl.redboy.ui.view.Listitemview
+        android:id="@+id/ltv_transportation"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+
+        android:layout_height="wrap_content"
+        itheima:bgtype="last"
+        itheima:text="配送方式:"/>
+
+    <Button
+        android:id="@+id/btn_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/rectangle_orange"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="客服电话:400-81929039"
+        android:textColor="#FFF"
+        android:textSize="20sp"/>
+</LinearLayout>
+

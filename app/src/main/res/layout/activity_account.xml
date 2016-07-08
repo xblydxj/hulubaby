@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:itheima="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@mipmap/colorshuluwa"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="@color/md_teal_300_color_code"
+            app:expandedTitleMarginEnd="64dp"
+            app:expandedTitleMarginStart="48dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+        >
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/cart_fab_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="350dp"
+        android:elevation="7dp"
+        android:transitionName="fab"
+        app:layout_anchor="@id/appbar"
+        app:layout_anchorGravity="bottom|right|end"
+        fab:menu_animationDelayPerItem="50"
+        fab:menu_backgroundColor="#00ffffff"
+        fab:menu_buttonSpacing="0dp"
+        fab:menu_colorNormal="@color/md_orange_300_color_code"
+        fab:menu_colorPressed="@color/md_pink_500_color_code"
+        fab:menu_colorRipple="@color/md_purple_400_color_code"
+        fab:menu_fab_size="normal"
+        fab:menu_icon="@drawable/floating_settings"
+        fab:menu_labels_colorNormal="#333333"
+        fab:menu_labels_colorPressed="#444444"
+        fab:menu_labels_colorRipple="#66FFFFFF"
+        fab:menu_labels_cornerRadius="3dp"
+        fab:menu_labels_ellipsize="none"
+        fab:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+        fab:menu_labels_margin="0dp"
+        fab:menu_labels_maxLines="-1"
+        fab:menu_labels_padding="8dp"
+        fab:menu_labels_paddingBottom="4dp"
+        fab:menu_labels_paddingLeft="8dp"
+        fab:menu_labels_paddingRight="8dp"
+        fab:menu_labels_paddingTop="4dp"
+        fab:menu_labels_position="left"
+        fab:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+        fab:menu_labels_showShadow="true"
+        fab:menu_labels_singleLine="false"
+        fab:menu_labels_textColor="#FFFFFF"
+        fab:menu_labels_textSize="14sp"
+        fab:menu_openDirection="up"
+        fab:menu_shadowColor="#66000000"
+        fab:menu_shadowRadius="4dp"
+        fab:menu_shadowXOffset="1dp"
+        fab:menu_shadowYOffset="3dp"
+        fab:menu_showShadow="true">
+        <!--fab:menu_fab_hide_animation="@anim/my_hide_animation"-->
+        <!--fab:menu_fab_show_animation="@anim/my_show_animation"-->
+        <!--fab:menu_labels_style="@style/YourCustomLabelsStyle"-->
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/account_fab_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/account_more"
+            fab:fab_label="返回更多"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/account_fab_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/account_exit"
+            fab:fab_label="退出登录"/>
+        <!--fab:fab_size="14sp"-->
+        <!--fab:fab_size="14sp"-->
+    </com.github.clans.fab.FloatingActionMenu>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/md_white_color_code"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                app:cardElevation="7dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/md_white_color_code"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="10dp"
+                >
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="20dp"
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/nerv"/>
+
+                    <TextView
+                        android:id="@+id/tv_account"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="120dp"
+                        android:layout_marginTop="15dp"
+                        android:lineSpacingMultiplier="1.2"
+                        android:text="用户名:\n总积分:\n会员等级:"
+                        android:textColor="@color/md_black_color_code"
+                        android:textSize="15sp"/>
+
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:elevation="5dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.heima.jyl.redboy.ui.view.Listitemview
+                        android:id="@+id/ltv_order"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:layout_marginTop="20dp"
+                        itheima:text="我的订单(10)"/>
+
+                    <com.heima.jyl.redboy.ui.view.Listitemview
+                        android:id="@+id/ltv_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        itheima:bgtype="middle"
+                        itheima:text="我的地址"/>
+
+                    <com.heima.jyl.redboy.ui.view.Listitemview
+                        android:id="@+id/ltv_coupon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        itheima:bgtype="middle"
+                        itheima:text="我的优惠券/礼品卡(99)"/>
+
+                    <com.heima.jyl.redboy.ui.view.Listitemview
+                        android:id="@+id/ltv_collector"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        itheima:bgtype="last"
+                        itheima:text="我的收藏"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>
+    <!--<RelativeLayout-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:itheima="http://schemas.android.com/apk/res-auto"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" xmlns:fab="http://schemas.android.com/tools"-->
+    <!--android:orientation="vertical">-->
+
+    <!--&lt;!&ndash;<com.heima.jyl.redboy.ui.view.TopBarView&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="60dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;itheima:btn_left="rectangle"&ndash;&gt;-->
+    <!--&lt;!&ndash;itheima:btn_right="rectangle"&ndash;&gt;-->
+    <!--&lt;!&ndash;itheima:left_text="更多"&ndash;&gt;-->
+    <!--&lt;!&ndash;itheima:right_text="退出登陆"&ndash;&gt;-->
+    <!--&lt;!&ndash;itheima:title_text="账户中心"/>&ndash;&gt;-->
+
+
+    <!--<TextView-->
+    <!--android:lineSpacingMultiplier="1.2"-->
+    <!--android:id="@+id/tv_account"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="20dp"-->
+    <!--android:layout_marginTop="20dp"-->
+    <!--android:text="用户名:\n会员等级:\n总积分:"-->
+    <!--android:textSize="15sp"/>-->
+
+    <!--</RelativeLayout>-->
+

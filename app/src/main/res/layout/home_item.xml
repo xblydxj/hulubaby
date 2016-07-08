@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="5dp"
+    app:cardMaxElevation="10dp"
+    android:layout_height="wrap_content">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:elevation="5dp"
+                    android:minHeight="45dip"
+    >
+
+        <ImageView
+            android:id="@+id/imgIcon"
+            android:layout_width="26dip"
+            android:layout_height="26dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dip"
+            android:background="@drawable/home_classify_01"
+            android:elevation="5dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:elevation="5dp"
+            android:src="@drawable/arrow"/>
+
+        <TextView
+            android:id="@+id/textContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dip"
+            android:layout_toRightOf="@+id/imgIcon"
+            android:elevation="5dp"
+            android:text="促销快报"
+            android:textColor="@color/md_red_500_color_code"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

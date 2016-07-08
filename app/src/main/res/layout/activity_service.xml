@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:itheima="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="@color/md_teal_300_color_code"
+        app:title="售后服务"
+        app:titleTextColor="@color/md_white_color_code"
+        android:layout_height="90dp">
+
+    </android.support.v7.widget.Toolbar>
+    <!--<com.heima.jyl.redboy.ui.view.TopBarView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--itheima:btn_left="back"-->
+        <!--itheima:title_text="售后服务"/>-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="一、商家商品问题"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:text="当您与红孩子或第三方商家对商品是否存在质量问题存在意见分歧时，以该商品厂家或其指定维修站的确认商品故障情况的结果为准。"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="二、退换货要求"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:text="退换货(包含有质量问题的商品）时，请务必将商品的内带附件、赠品（如有）、保修卡、说明书、发票、检测报告（针对需凭检测报告办理退换货的商品）等随同商品一起退回。\n友情提示：建议产品外包装自收货之日起保留15日，退换货时附商品的原外包装。 "
+        android:textSize="15sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="三、第三方商家的无理由退换货"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:text=" (1)第三方商家出售的同品类商品，参加无理由退换货的品类，与红孩子自营同品类保持一致，商家如承诺高于现有的退换货政策，按商家标准执行；\n(2)关于开放平台无理由退换货纠纷处理细则详见：平台无理由纠纷细则。 "
+        android:textSize="15sp"/>
+</LinearLayout>

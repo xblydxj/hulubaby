@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:elevation="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/iv_item_newproduct"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/border_80"/>
+
+    <TextView
+        android:id="@+id/tv_item_newproduct_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_item_newproduct"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/iv_item_newproduct"
+        android:text="@string/productionName"
+        android:textColor="#000"
+        />
+
+    <TextView
+        android:id="@+id/tv_item_newproduct_primecost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_item_newproduct_name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/iv_item_newproduct"
+        android:background="@drawable/separation"
+        android:text="@string/prime_cost"
+        />
+
+    <TextView
+        android:id="@+id/item_limitbuy_textlimitprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_item_newproduct_primecost"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/iv_item_newproduct"
+        android:text="@string/limitprice"
+        />
+
+    <TextView
+        android:id="@+id/tv_item_nowprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/item_limitbuy_textlimitprice"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/item_limitbuy_textlimitprice"
+        android:text="$48"
+        android:textColor="@color/md_red_500_color_code"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/item_limitbuy_lefttime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/item_limitbuy_textlimitprice"
+        android:layout_below="@id/tv_item_nowprice"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/md_red_500_color_code"
+        android:textSize="15sp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/tv_item_nowprice"
+        android:layout_alignParentRight="true">
+
+        <TextView
+            android:id="@+id/tv_item_newproduct_buy"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:background="@drawable/rectangle_corner_pressed"
+            android:gravity="center"
+            android:text="@string/buynow"
+            android:textColor="#fff"/>
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/tv_item_newproduct_buy"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/arrow"/>
+    </RelativeLayout>
+</RelativeLayout>

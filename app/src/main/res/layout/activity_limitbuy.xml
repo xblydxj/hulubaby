@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="@color/md_teal_300_color_code"
+        app:title="限时抢购"
+        app:titleTextColor="@color/md_white_color_code"
+        android:layout_height="90dp">
+
+    </android.support.v7.widget.Toolbar>
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+        <!---->
+        <!--<TextView-->
+            <!--style="@style/common_title"-->
+            <!--android:text="@string/limitbuy"/>-->
+        <!--&lt;!&ndash;<Button&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/btn_back"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="72dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="36dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:text="@string/back"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textColor="#fff"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_centerVertical="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_marginLeft="10dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:paddingLeft="10dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textSize="18sp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:background="@drawable/bar_head_back_bg"/>&ndash;&gt;-->
+
+
+    <!--</RelativeLayout>-->
+    <ListView
+        android:dividerHeight="10dp"
+        android:layout_margin="10dp"
+        android:id="@+id/lv_home_limitbuy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ListView>
+
+</LinearLayout>

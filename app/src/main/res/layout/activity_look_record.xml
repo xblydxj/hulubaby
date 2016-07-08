@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@color/md_teal_300_color_code"
+            app:title="浏览记录"
+            app:titleTextColor="@color/md_white_color_code">
+
+        </android.support.v7.widget.Toolbar>
+        <!--<com.heima.jyl.redboy.ui.view.TopBarView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--itheima:btn_left="rectangle"-->
+        <!--itheima:btn_right="rectangle"-->
+        <!--itheima:left_text="更多"-->
+        <!--itheima:right_text="清空"-->
+        <!--itheima:title_text="浏览记录"/>-->
+
+
+        <com.baoyz.swipemenulistview.SwipeMenuListView
+            android:id="@+id/lv_lookScore"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:dividerHeight="10dp"/>
+
+
+    </LinearLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="50dp"
+        android:id="@+id/look_clear"
+        android:src="@drawable/ic_clear_all"
+        android:layout_marginRight="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</FrameLayout>

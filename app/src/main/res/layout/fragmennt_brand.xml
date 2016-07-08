@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="wrap_content"
+        android:layout_height="440dp">
+        <ListView
+            android:id="@+id/brand_lv_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:dividerHeight="6dp"
+            android:padding="20dp"
+        >
+        </ListView>
+        <ListView
+            android:id="@+id/brand_lv_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dividerHeight="6dp"
+            android:padding="20dp"
+        >
+        </ListView>
+        <ListView
+            android:id="@+id/brand_lv_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dividerHeight="6dp"
+            android:padding="20dp"
+        >
+        </ListView>
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/brand_fab_back"
+            android:layout_marginRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_brand_return"
+            android:elevation="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+</LinearLayout>

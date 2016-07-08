@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:fab="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/shop_ll_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/shopcar"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView3"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="44dp"
+            android:background="@drawable/rectangle_orange"
+            android:elevation="10dp"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:text="随便逛逛"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:layout_centerHorizontal="true"
+            android:text="您的购物车中没有商品！"
+            android:textColor="#000"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="5dp"
+            android:text="快去挑件喜欢的商品吧！"
+            android:textColor="#000"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/shop_ll_full"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="9dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectangle_orange"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="商品种类："
+                            android:textColor="@color/md_white_color_code"
+                            android:textSize="18sp"/>
+
+                        <TextView
+                            android:id="@+id/shop_tv_kids"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="0"
+                            android:textColor="@color/md_white_color_code"
+                            android:textSize="18sp"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="商品数量："
+                            android:textColor="@color/md_white_color_code"
+                            android:textSize="18sp"/>
+
+                        <TextView
+                            android:id="@+id/shop_tv_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="0"
+                            android:textColor="@color/md_white_color_code"
+                            android:textSize="18sp"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="商品总金额：(不含运费)"
+                            android:textColor="@color/md_white_color_code"
+                            android:textSize="18sp"/>
+
+                        <TextView
+                            android:id="@+id/shop_tv_sum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="0.00"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="19sp"/>
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+        <com.baoyz.swipemenulistview.SwipeMenuListView
+            android:id="@+id/shop_lv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="9dp"
+            android:layout_weight="1"
+            android:dividerHeight="4dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="100dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/shop_btn_all"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView3"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/rectangle_orange"
+                android:elevation="10dp"
+                android:gravity="center"
+                android:text="全选"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"/>
+
+            <Button
+                android:id="@+id/shop_btn_reverse"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView3"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/rectangle_orange"
+                android:elevation="10dp"
+                android:gravity="center"
+                android:text="反选"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"/>
+
+            <Button
+                android:id="@+id/shop_btn_no"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView3"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/rectangle_orange"
+                android:elevation="10dp"
+                android:gravity="center"
+                android:text="取消选择"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="235dp"
+        android:layout_marginTop="200dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.github.clans.fab.FloatingActionMenu
+                android:id="@+id/cart_fab_menu2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="6dp"
+                fab:menu_animationDelayPerItem="50"
+                fab:menu_backgroundColor="#00ffffff"
+                fab:menu_buttonSpacing="0dp"
+                fab:menu_colorNormal="@color/md_deep_orange_300_color_code"
+                fab:menu_colorPressed="@color/md_pink_500_color_code"
+                fab:menu_colorRipple="@color/md_purple_400_color_code"
+                fab:menu_fab_size="normal"
+                fab:menu_icon="@drawable/floating_settings"
+                fab:menu_labels_colorNormal="#333333"
+                fab:menu_labels_colorPressed="#444444"
+                fab:menu_labels_colorRipple="#66FFFFFF"
+                fab:menu_labels_cornerRadius="3dp"
+                fab:menu_labels_ellipsize="none"
+                fab:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+                fab:menu_labels_margin="0dp"
+                fab:menu_labels_maxLines="-1"
+                fab:menu_labels_padding="8dp"
+                fab:menu_labels_paddingBottom="4dp"
+                fab:menu_labels_paddingLeft="8dp"
+                fab:menu_labels_paddingRight="8dp"
+                fab:menu_labels_paddingTop="4dp"
+                fab:menu_labels_position="left"
+                fab:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+                fab:menu_labels_showShadow="true"
+                fab:menu_labels_singleLine="false"
+                fab:menu_labels_textColor="#FFFFFF"
+                fab:menu_labels_textSize="14sp"
+                fab:menu_openDirection="up"
+                fab:menu_shadowColor="#66000000"
+                fab:menu_shadowRadius="4dp"
+                fab:menu_shadowXOffset="1dp"
+                fab:menu_shadowYOffset="3dp"
+                fab:menu_showShadow="true">
+                <!--fab:menu_fab_hide_animation="@anim/my_hide_animation"-->
+                <!--fab:menu_fab_show_animation="@anim/my_show_animation"-->
+                <!--fab:menu_labels_style="@style/YourCustomLabelsStyle"-->
+
+                <com.github.clans.fab.FloatingActionButton
+                    android:id="@+id/brand_fab_over"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/cart_over"
+                    fab:fab_label="完成"/>
+
+                <com.github.clans.fab.FloatingActionButton
+                    android:id="@+id/brand_fab_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/cart_delete"
+                    fab:fab_label="删除"/>
+                <!--fab:fab_size="14sp"-->
+                <!--fab:fab_size="14sp"-->
+
+            </com.github.clans.fab.FloatingActionMenu>
+
+            <com.github.clans.fab.FloatingActionMenu
+                android:id="@+id/cart_fab_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="6dp"
+                fab:menu_animationDelayPerItem="50"
+                fab:menu_backgroundColor="#00ffffff"
+                fab:menu_buttonSpacing="0dp"
+                fab:menu_colorNormal="@color/md_orange_300_color_code"
+                fab:menu_colorPressed="@color/md_pink_500_color_code"
+                fab:menu_colorRipple="@color/md_purple_400_color_code"
+                fab:menu_fab_size="normal"
+                fab:menu_icon="@drawable/floating_settings"
+                fab:menu_labels_colorNormal="#333333"
+                fab:menu_labels_colorPressed="#444444"
+                fab:menu_labels_colorRipple="#66FFFFFF"
+                fab:menu_labels_cornerRadius="3dp"
+                fab:menu_labels_ellipsize="none"
+                fab:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+                fab:menu_labels_margin="0dp"
+                fab:menu_labels_maxLines="-1"
+                fab:menu_labels_padding="8dp"
+                fab:menu_labels_paddingBottom="4dp"
+                fab:menu_labels_paddingLeft="8dp"
+                fab:menu_labels_paddingRight="8dp"
+                fab:menu_labels_paddingTop="4dp"
+                fab:menu_labels_position="left"
+                fab:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+                fab:menu_labels_showShadow="true"
+                fab:menu_labels_singleLine="false"
+                fab:menu_labels_textColor="#FFFFFF"
+                fab:menu_labels_textSize="14sp"
+                fab:menu_openDirection="up"
+                fab:menu_shadowColor="#66000000"
+                fab:menu_shadowRadius="4dp"
+                fab:menu_shadowXOffset="1dp"
+                fab:menu_shadowYOffset="3dp"
+                fab:menu_showShadow="true">
+                <!--fab:menu_fab_hide_animation="@anim/my_hide_animation"-->
+                <!--fab:menu_fab_show_animation="@anim/my_show_animation"-->
+                <!--fab:menu_labels_style="@style/YourCustomLabelsStyle"-->
+                <com.github.clans.fab.FloatingActionButton
+                    android:id="@+id/brand_fab_settle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/cart_floating_settle"
+                    fab:fab_label="结算"/>
+
+                <com.github.clans.fab.FloatingActionButton
+                    android:id="@+id/brand_fab_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/cart_edit"
+                    fab:fab_label="编辑"/>
+                <!--fab:fab_size="14sp"-->
+                <!--fab:fab_size="14sp"-->
+            </com.github.clans.fab.FloatingActionMenu>
+        </RelativeLayout>
+    </FrameLayout>
+</FrameLayout>

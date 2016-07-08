@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:descendantFocusability="blocksDescendants"
+    android:padding="3dp"
+    app:cardElevation="5dp"
+    app:cardMaxElevation="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <FrameLayout
+                android:id="@+id/shop_item_fl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp">
+
+                <CheckBox
+                    android:id="@+id/item_cb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"/>
+
+                <ImageView
+                    android:id="@+id/item_check"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:src="@drawable/shop_item_check"/>
+
+
+            </FrameLayout>
+
+
+            <ImageView
+                android:id="@+id/shop_item_productImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/ic_default_adimage"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/item_productName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:text="童壹库男童圆领毛衣KGME081101"
+                    android:textColor="@android:color/black"/>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/shop_item_fl_rl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/shop_item_num_word"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="数量："/>
+
+                        <TextView
+                            android:id="@+id/shop_item_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/shop_item_num_word"
+                            android:text="num"/>
+
+                        <TextView
+                            android:id="@+id/shop_item_price_word"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_below="@+id/shop_item_num_word"
+                            android:text="价格："/>
+
+                        <TextView
+                            android:id="@+id/shop_item_price_symbol"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@+id/shop_item_price_word"
+                            android:layout_alignBottom="@+id/shop_item_price_word"
+                            android:layout_toEndOf="@+id/shop_item_price_word"
+                            android:layout_toRightOf="@+id/shop_item_price_word"
+                            android:text="￥"
+                            android:textColor="@android:color/holo_red_dark"/>
+
+                        <TextView
+                            android:id="@+id/item_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/shop_item_num"
+                            android:layout_toEndOf="@+id/shop_item_price_symbol"
+                            android:layout_toRightOf="@+id/shop_item_price_symbol"
+                            android:text="price"
+                            android:textColor="@android:color/holo_red_dark"/>
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/shop_item_fl_ll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5dp"
+                        android:visibility="invisible">
+
+                        <ImageView
+                            android:id="@+id/shop_item_minus"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:background="@drawable/shop_down_bg"
+                            android:src="@drawable/ic_remove"/>
+
+                        <EditText
+                            android:id="@+id/shop_item_cnum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/shop_down_bg"
+                            android:clickable="true"
+                            android:gravity="center_horizontal"
+                            android:hint="num"/>
+
+                        <ImageView
+                            android:id="@+id/shop_item_add"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:background="@drawable/shop_down_bg"
+                            android:src="@drawable/ic_add"/>
+                    </LinearLayout>
+
+
+                </FrameLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="3dp">
+
+                    <TextView
+                        android:id="@+id/shop_item_sum_word"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="小计："
+                        android:textColor="@android:color/holo_red_dark"/>
+
+                    <TextView
+                        android:id="@+id/shop_item_sum_symbol"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/shop_item_sum_word"
+                        android:text="￥"
+                        android:textColor="@android:color/holo_red_dark"/>
+
+                    <TextView
+                        android:id="@+id/item_sum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/shop_item_sum_symbol"
+                        android:text="sum"
+                        android:textColor="@android:color/holo_red_dark"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

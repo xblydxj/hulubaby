@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="@color/md_teal_300_color_code"
+        app:title="收藏夹"
+        app:titleTextColor="@color/white"
+        android:layout_height="90dp">
+
+    </android.support.v7.widget.Toolbar>
+    <!--<com.heima.jyl.redboy.ui.view.TopBarView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--itheima:btn_left="rectangle"-->
+    <!--itheima:btn_right="rectangle"-->
+    <!--itheima:left_text="账户中心"-->
+    <!--itheima:right_text="清空"-->
+    <!--itheima:title_text="收藏夹">-->
+
+    <!--</com.heima.jyl.redboy.ui.view.TopBarView>-->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:layout_height="match_parent">
+        <ListView
+            android:dividerHeight="20dp"
+            android:divider="@color/md_white_color_code"
+            android:layout_margin="10dp"
+            android:id="@+id/lv_collector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:id="@+id/ll_collector_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:visibility="invisible">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/empty_img"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="\n\n您的收藏夹还没有商品哦"/>
+        </LinearLayout>
+        <android.support.design.widget.FloatingActionButton
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="50dp"
+            android:id="@+id/collector_clear"
+            android:src="@drawable/ic_clear_all"
+            android:layout_marginRight="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </FrameLayout>
+</LinearLayout>
