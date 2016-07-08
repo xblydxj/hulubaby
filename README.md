@@ -6,11 +6,11 @@
 
 - Material Design
 
-  # 2. 基本信息
+## 2. 基本信息
 
 - 最低支持版本21
 
-  # 3. 使用框架
+## 3. 使用框架
 
 - FloatingActionMenu
 
